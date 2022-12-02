@@ -1,4 +1,4 @@
-import search_text, string
+import string
 
 def read_lines(filename):
     lines = []
