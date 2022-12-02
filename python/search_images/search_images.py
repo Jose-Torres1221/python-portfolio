@@ -1,7 +1,12 @@
 import search_text
 
 def read_lines(filename):
-    return search_text.read_lines(filename)
+    lines = []
+    with open(filename, 'r') as input_file:
+        for line in input_file:
+            line = line.rstrip()
+            lines.append(line)
+    return lines
 
 def create_dictionary(lines):
     del lines[0]
