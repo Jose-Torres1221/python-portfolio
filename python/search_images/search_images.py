@@ -1,5 +1,3 @@
-import search_text
-
 def read_lines(filename):
     lines = []
     with open(filename, 'r') as input_file:
